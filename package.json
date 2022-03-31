@@ -1,0 +1,27 @@
+{
+  "name": "ninjas",
+  "homepage": "https://github.com/ninjas",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.X"
+},
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "Maksym__Borysov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "gh-pages": "^3.2.3",
+    "mongoose": "^6.2.8",
+    "nodemon": "^2.0.15"
+  }
+}

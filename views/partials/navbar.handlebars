@@ -1,0 +1,24 @@
+  <nav class="blue darken-4">
+    <div class="nav-wrapper">
+
+      <a href="/" class="brand-logo">
+      <img src="/images/ninja2.png" width="64px" alt="Ninja" class="logo"/>
+      
+      </a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down nav">
+          {{#if isIndex}}
+        <li class="active"><a href="/" >Ninjas</a></li>
+          {{else}}
+        <li><a href="/">Ninjas</a></li>
+          {{/if}}
+
+          {{#if isCreate}}
+        <li class="active"><a href="/create">Create ninjas</a></li>
+         {{else}}
+        <li><a href="/create">Create ninjas</a></li>
+         {{/if}}
+
+      </ul>
+    </div>
+  </nav>
